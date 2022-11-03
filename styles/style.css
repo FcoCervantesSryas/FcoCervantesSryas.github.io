@@ -1,0 +1,175 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    max-width: 100%;
+    margin:0px;
+    padding: 0px;
+}
+/* NAV BAR */
+.NavBar{
+    margin: 0px;
+    padding: 0px;
+    height: 40%;
+    width: 6%;
+    position: fixed;
+    top:30%;
+    left:97%;
+    z-index: 1;
+}
+.NavBar>ul{
+    list-style-type: none;
+    height: 100%;
+    display:grid;
+    justify-items: right;
+}
+.NB_element{
+    background-color: rgba(0, 0, 0, 0.356);
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    height: 100%;
+    transition: width 0.5s;
+    transition-timing-function: ease-out;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-size: 150%;
+    padding-left: 20%;
+}
+.NB_element:hover{
+    background-color: black;
+    width: 175%;
+}
+/*--------------- SECTIONS ---------------*/
+.Section{
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    z-index: 0;
+    overflow: hidden;
+}
+/* SECTION 1 - HELLO */
+#S1{
+    background: linear-gradient(0deg, rgba(68,0,140,1) 0%, rgba(0,51,143,1) 100%);
+    display: flex;
+    align-items: center;
+}
+.Name-Desc{
+    width: 50vw;
+    padding-left: 10vh;
+}
+.Name{
+    font-size:20vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+.Name-Desc>hr{
+    border-width: 5px;
+}
+.Desc{
+    width: 100%;
+    font-size: 1.5vw;
+    font-family: Verdana;
+    font-weight: bold;
+    color:white;
+    margin-top: 10px;
+}
+.Pastel{
+    height: 80vh;
+    width: 50vw;
+}
+.Pastel>img{
+    position: absolute;
+}
+#img1{
+    top: 145px;
+    right: 318px;
+    width: 132px;
+    animation-name: img1_a;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+@keyframes img1_a {
+    0%  {right:318px; top:145px; width:132px}
+    33% {right:318px; top:102px; width:160px}
+    66% {right:318px; top:145px; width:132px}
+    100% {right:318px; top:145px; width:132px}
+}
+#img2{
+    top: 238px;
+    right: 306px;
+    width: 163px;
+    animation-name: img2_a;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+@keyframes img2_a {
+    0%  {right:306px; top:238px; width:163px}
+    33% {right:306px; top:238px; width:163px}
+    66% {right: 306px; top: 220px; width: 200px;}
+    100% {right:306px; top:238px; width:163px}
+}
+#img3{
+    top: 89px;
+    right: 147px;
+    width: 333px;
+    animation-name: img3_a;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+@keyframes img3_a {
+    0%  {right: 89px; top: 147px; width: 333px;}
+    33% {right: 130px; top: 167px; width: 297px;}
+    66% {right: 130px; top: 167px; width: 297px;}
+    100% {right: 89px; top: 147px; width: 333px;}
+}
+/* SECTION 2 - Analysis */
+#S2{
+    background: linear-gradient(0deg, rgba(47,47,47,1) 0%, rgba(0,0,0,1) 100%);
+    display: flex;
+    align-items: center;
+}
+#S2>div{
+    height: 100%;
+    width: 40vw;
+}
+.img4{
+    position: absolute;
+    width: 30%;
+    top: 120%;
+    left: 10%;
+    z-index: 1;
+}
+.img5{
+    position:absolute;
+    width: 15%;
+    top: 110%;
+    left: 5%;
+    z-index: 2;
+}
+.img6{
+    position: absolute;
+    width: 15%;
+    top: 110%;
+    left:45%
+}
+/* SECTION 3 - M. L. */
+#S3{
+    background: #00338F;
+    background-image: url("../imgs/ml_white.svg");
+    background-size:30%;
+    background-position: 10% center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+}
+#S4{
+    background-color: aqua;
+}
+#S5{
+    background-color: white;
+}
